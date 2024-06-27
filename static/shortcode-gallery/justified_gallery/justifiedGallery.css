@@ -4,7 +4,7 @@
  * Copyright (c) 2018 Miro Mannino
  * Licensed under the MIT license.
  */
-.justified-gallery {
+ .justified-gallery {
   width: 100%;
   position: relative;
   overflow: hidden;
@@ -39,23 +39,29 @@
 .justified-gallery > a > .caption,
 .justified-gallery > div > .caption,
 .justified-gallery > figure > .caption {
-  display: none;
+  display: block;
   position: absolute;
   bottom: 0;
-  padding: 5px;
+  padding: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
   background-color: #000000;
   left: 0;
-  right: 0;
+  right: 1;
   margin: 0;
   color: white;
-  font-size: 12px;
-  font-weight: 300;
-  font-family: sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  font-family: "Karla", sans-serif;
+  font-optical-sizing: auto;
+  filter: "alpha(opacity=70)";
+  opacity: 0.7;
 }
 .justified-gallery > a > .caption.caption-visible,
 .justified-gallery > div > .caption.caption-visible,
 .justified-gallery > figure > .caption.caption-visible {
-  display: initial;
+  display: block;
   filter: "alpha(opacity=70)";
   opacity: 0.7;
   transition: opacity 500ms ease-in;

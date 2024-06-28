@@ -42,29 +42,24 @@
   display: block;
   position: absolute;
   bottom: 0;
-  padding: 3px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #000000;
+  background: linear-gradient(0deg, #000000b3, #0000004d 70%, #0000);
+  bottom: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 13px;
   left: 0;
-  right: 1;
-  margin: 0;
-  color: white;
-  font-size: 15px;
-  font-weight: 400;
-  font-style: italic;
-  font-family: "Karla", sans-serif;
-  font-optical-sizing: auto;
-  filter: "alpha(opacity=70)";
-  opacity: 0.7;
+  margin-bottom: 0;
+  max-height: 60%;
+  overflow: auto;
+  padding: 0 8px 8px;
+  text-align: center;
+  width: 100%;
+  will-change: transform;
 }
 .justified-gallery > a > .caption.caption-visible,
 .justified-gallery > div > .caption.caption-visible,
 .justified-gallery > figure > .caption.caption-visible {
   display: block;
-  filter: "alpha(opacity=70)";
-  opacity: 0.7;
-  transition: opacity 500ms ease-in;
 }
 .justified-gallery > .entry-visible {
   filter: "alpha(opacity=100)";
